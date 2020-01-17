@@ -70,36 +70,9 @@ void setup() {
   sHit.write(63);  
 }
 
-void loop() { 
-  // -- TEST --
-  /*
-  for (byte i = 0; i <= sCnt; i++) {
-    switch (songs[i]) {
-      case  1: play(song01); break;
-      case  2: play(song02); break;
-      case  3: play(song03); break;
-      case  4: play(song04); break;
-      case  5: play(song05); break;
-      case  6: play(song06); break;
-      case  7: play(song07); break;
-      case  8: play(song08); break;
-      case  9: play(song09); break;
-      case 10: play(song10); break;
-      case 11: play(song11); break;
-      case 12: play(song12); break;
-      case 13: play(song13); break;
-      case 14: play(song14); break;
-      case 15: play(song15); break;
-      case 16: play(song16); break;
-    }  
-    delay(3000);
-  }
-  delay(10000);
-  */
-  // -----------
+void loop() {   
   delay(50);                              // Save some resources
-  if (digitalRead(pBtn) == LOW) {
-    
+  if (digitalRead(pBtn) == LOW) {    
     if (sCur == sCnt-1) {                 // When at end of the playlist
       for (byte i = 0; i <= sCnt; i++) {  // Randomize playlist
         sRnd = random(0,sCnt-1);
@@ -109,7 +82,6 @@ void loop() {
       }
       sCur = 0;
     }
-
     switch (songs[sCur]) {                // Play song in playlist
       case  1: play(song01); break;
       case  2: play(song02); break;
@@ -129,5 +101,5 @@ void loop() {
       case 16: play(song16); break;    
     }
     sCur++;
-  }
+  }  
 }
