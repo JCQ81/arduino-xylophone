@@ -21,7 +21,7 @@ Arduino based xylophone playing a random song when the button is pushed. The goa
 * Case (wood, 3D printed, whatever's possible)
 * Glue
 
-**1:  For the bottom servo, the SG90 is not powerful enough to stop the moving stick instantly, resulting in wrong positions and making it bump around when trying to correct it's position. Therefore use a more powerful servo of your own choosing, like the 4503HB or simular.
+**1:  For the bottom servo, the SG90 is not powerful enough to stop the moving stick instantly, resulting in wrong positions and making it bump around when trying to correct it's position. Therefore use a more powerful servo of your own choosing, like the 4503HB or simular.*
 
 **2: There are several solutions, like using another arduino with an USB interface like the R3 or Nano, or use an interface like the CP2102 wich I preferred (don't forget to also order your dupont cables)*
 
